@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="asset/styleRegister.css">
+    <script src="asset/register.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+            <div class="navbar">
+                <img src="asset/image/logo.png" class="logo">
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="songs.html">Songs</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+     <div class="form">
+        <form id="registerForm">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+            <span class="error" id="usernameError"></span>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <span class="error" id="emailError"></span>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <span class="error" id="passwordError"></span>
+        </div>
+        <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+            <span class="error" id="confirmPasswordError"></span>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <span class="error" id="genderError"></span>
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="">Select a country</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+            <span class="error" id="countryError"></span>
+        </div>
+        <div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">Aggree to terms and condition</label>
+            <span class="error" id="termsError"></span>
+        </div>
+        <div>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Willify. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
